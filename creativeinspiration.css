@@ -24,7 +24,7 @@ body {
   height:auto;
   position: relative; 
   overflow: hidden; 
-  width: 1024px;
+  width: 70%;
 }
 
 #header
@@ -53,33 +53,6 @@ padding-right:30px;
 }
 
 
-#bar
-{
-height:53px;
-width:1024px;
-padding-bottom:15px;
-
-}
-
-
-
-#bar .navLink a
-{
-position:relative;
-top:16px;
-margin-left:35px;
-color:#FFFFFF;
-text-align:center;
-font-size:15pt;
-float:left;
-}
-
-#bar .navLink a:hover
-{
-color:#E4EBFA;
-}
-
-
 .contentTitle
 {
 font-size:18pt;
@@ -92,11 +65,10 @@ padding-top:20px;
 
 .contentText
 {
-width:960px;
+width:95%;
 padding-left:30px;
 padding-right:30px;
 font-size:12pt;
-color:#030712;
 line-height:20px;
 margin-top:10px;
 }
@@ -116,15 +88,6 @@ color:#00c;
 a:hover
 {
 color:#c00;
-}
-
-
-#footer {
-width: 1024px;
-height:49px;
-text-align:center;
-font-size:10pt;
-padding-top:36px;
 }
 
 html, body {
