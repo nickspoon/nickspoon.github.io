@@ -1,0 +1,156 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref, amssymb, amsmath, amsthm, graphicx, subfigure, fullpage}
+
+\usepackage[capitalise,noabbrev]{cleveref}
+\usepackage{braket}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+\setlength{\topsep}{1em}
+
+% heading ------------------------------------------------------------------------------------------------------------%
+\newcommand{\heading}[6]{
+  \renewcommand{\thepage}{#1 -- \arabic{page}}
+  \noindent
+  \begin{center}
+  \framebox{
+    \vbox{
+      \hbox to 5.78in { \textbf{#2} \hfill #3 }
+      \vspace{4mm}
+      \hbox to 5.78in { {\Large \hfill Lecture #1: #6  \hfill} }
+      \vspace{2mm}
+      \hbox to 5.78in { \textit{Instructor: #4 \hfill #5} }
+    }
+  }
+  \end{center}
+  \vspace*{4mm}
+}
+
+\newcommand{\lecture}[4]{\heading{#1}{CS 6832: Quantum Cryptography}{#2}{Nick Spooner}{Scribe: #4}{#3}}
+
+% theorems -----------------------------------------------------------------------------------------------------------%
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{claim}[theorem]{Claim}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{idea}[theorem]{Idea}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{proposition}[theorem]{Proposition}
+
+%---------------------------------------------------------------------------------------------------------------------%
+% PLEASE MODIFY THESE FIELDS AS APPROPRIATE:
+\newcommand{\lecturenum}{1} % lecture number
+\newcommand{\lecturedate}{Month Day, 2025} % date of lecture (e.g., 'March 20, 2010')
+\newcommand{\lecturetitle}{Title} % lecture title
+\newcommand{\scribename}{Werner Heisenberg} % full name of scribe
+%---------------------------------------------------------------------------------------------------------------------%
+
+%---------------------------------------------------------------------------------------------------------------------%
+% PUT HERE ANY PACKAGES, MACROS, etc., ADDED BY YOU
+
+
+%---------------------------------------------------------------------------------------------------------------------%
+
+\begin{document}
+\lecture{\lecturenum}{\lecturedate}{\lecturetitle}{\scribename}
+
+\section{Introduction}
+
+Write your scribe notes here. Please make sure that you modify the lecture number, lecture title, lecture date, and
+scribe name fields in the preamble as appropriate. Also, please write your scribed notes clearly and using good \LaTeX{}
+style.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+aimccaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsection{Theorem Environments}
+
+Here is a demonstration of the theorem environments.
+\begin{theorem}
+This is a theorem.
+\end{theorem}
+
+\begin{lemma}
+This is a lemma.
+\end{lemma}
+
+\begin{corollary}
+This is a corollary.
+\end{corollary}
+
+\begin{fact}
+This is a fact.
+\end{fact}
+
+\begin{remark}
+This is a remark.
+\end{remark}
+
+\begin{claim}
+This is a claim.
+\end{claim}
+
+\begin{definition}
+This is a definition.
+\end{definition}
+
+\begin{observation}
+This is an observation.
+\end{observation}
+
+\begin{proposition}
+This is a proposition.
+\end{proposition}
+
+\begin{assumption}
+This is an assumption.
+\end{assumption}
+
+\begin{question}
+This is a question.
+\end{question}
+
+\begin{idea}
+This is an idea.
+\end{idea}
+
+\subsection{Proof Environments}
+
+Here is a demonstration of the proof environments.
+
+\begin{theorem}
+\label{thm:thm-label}
+This is a theorem with a proof that shows up later in the body.
+\end{theorem}
+
+\begin{theorem}
+This is a theorem with a proof.
+\end{theorem}
+
+\begin{proof}
+This is the theorem's proof.
+\end{proof}
+
+\begin{proof}[Proof of \cref{thm:thm-label}]
+This is the proof of the previous theorem.
+\end{proof}
+
+
+% bibliography -------------------------------------------------------------------------------------------------------%
+
+\bibliographystyle{amsalpha}
+
+\end{document}
