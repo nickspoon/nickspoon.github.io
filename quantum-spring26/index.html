@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="stylesheet" type="text/css" href="../creativeinspiration.css">
+<title>CS 4813/5813: Quantum Computing, Spring 2026</title>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
+.tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:1px;color:#333;padding:10px;}
+.tg .row-b{background-color:#f9f9f9;}
+.tg td{text-align:left;vertical-align:top;padding:10px;border-color:#ccc;border-style:solid;border-width:1px;color:#333;}
+</style>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div id="headerTitle">CS 4813/5813: Quantum Computing, Spring 2026</div>
+		</div>
+        <div class="contentTitle">Course information</div>
+        <div class="contentText">
+        	<ul>
+        		<li><b>Lectures:</b> Tuesdays and Thursdays 2:55-4:10pm, Gates G01</li>
+        		<li><b>Instructor:</b> <a href="https://spooner.cc">Nick Spooner</a>, office hours Wednesday 4-5pm in Gates 315.</li>
+        		<li><b>TAs:</b>
+        			<ul><li>Santiago Lai</li><li>Nilay Patel</li></ul>
+        			 TA office hours: 2-3pm Wednesday in Rhodes 574, 3-4pm Friday in Ives 215.
+        		</li>
+        		<li>There will no final exam for this course; assessment will be conducted via two in-class prelims, weekly homeworks and a final report.</li>
+        	</ul>
+        </div>
+        <div class="contentTitle">Overview</div>
+        <div class="contentText">This course aims to provide an introduction to quantum computing and quantum information, from a computer science perspective. Topics covered include:</div>
+        <div class="contentText">
+        	<ul>
+        		<li>Qubits, measurement and unitary transformations</li>
+        		<li>Entanglement and non-locality</li>
+        		<li>Quantum key distribution</li>
+        		<li>Quantum circuits</li>
+        		<li>Basic quantum algorithms, e.g. Simon's algorithm, Grover search, Shor's factoring algorithm</li>
+        		<li>Quantum computational complexity</li>
+        		<li>Quantum error-correction and fault tolerance</li>
+        	</ul>
+		</div>
+		
+		<div class="contentTitle">Resources</div>
+		<div class="contentText">
+			<ul>
+				<li><b>Main textbook:</b> [W] Thomas G. Wong, <i>Introduction to Classical and Quantum Computing</i>, available for free at <a href="https://www.thomaswong.net/">https://www.thomaswong.net/</a>. Provides a gentle introduction to the basics.</li>
+				<li><b>Supplementary textbook:</b> [NC] Nielsen & Chuang, <a href="https://catalog.library.cornell.edu/catalog/10466973"><i>Quantum Computation and Quantum Information: 10th Anniversary Edition</i></a> (ebook available from Cornell library). An in-depth and comprehensive textbook, covering in detail most of the topics in this class, and a lot more.</li>
+				</ul>
+				</li>
+				<li><a href="https://www.cs.cmu.edu/~odonnell/quantum18/">Lecture notes by Ryan O'Donnell</a></li>
+				<li><a href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf">Lecture notes by Ronald de Wolf</a></li>
+			</ul>
+		</div>
+		
+		
+		<div class="contentTitle">Schedule</div>
+		<div class="contentText">
+			<table class="tg">
+				<thead>
+					<tr>
+						<th>Lecture #</th>
+						<th>Date</th>
+						<th>Title</th>
+						<th>Readings</th>
+					</tr>
+				</thead>
+				<tr>
+					<td>1</td>
+					<td>Jan 20</td>
+					<td>Introduction; superposition</td>
+					<td></td>
+				</tr>
+				<tr class="row-b">
+					<td>2</td>
+					<td>Jan 22</td>
+					<td>Measuring a single qubit</td>
+					<td>[W] Sections 2.2, 2.3.1.</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Jan 27</td>
+					<td>Elitzur-Vaidman bomb</td>
+					<td>[W] Section 2.6.1, 2.6.2.</td>
+				</tr>
+				<tr class="row-b">
+					<td>4</td>
+					<td>Jan 29</td>
+					<td>Quantum gates</td>
+					<td>[W] Section 3.3.</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Feb 3</td>
+					<td>Multi-qubit systems</td>
+					<td>[W] Section 4.2.</td>
+				</tr>
+				<tr class="row-b">
+					<td>6</td>
+					<td>Feb 5</td>
+					<td>Entanglement</td>
+					<td>[W] Section 4.3.</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>Feb 10</td>
+					<td>Non-local games</td>
+					<td>[W] Section 6.2.</td>
+				</tr>
+				<tr class="row-b">
+					<td>8</td>
+					<td>Feb 12</td>
+					<td>Quantum teleportation</td>
+					<td>[W] Section 6.5.</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>Feb break</td>
+					<td></td>
+				</tr>
+				<tr class="row-b">
+					<td></td>
+					<td>Feb 19</td>
+					<td>Prelim 1</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>Feb 24</td>
+					<td>Converting classical circuits to quantum circuits</td>
+					<td>[W] Section 4.5.1-2.</td>
+				</tr>
+				<tr class="row-b">
+					<td>10</td>
+					<td>Feb 26</td>
+					<td>Deutsch's algorithm and uncomputation</td>
+					<td>[W] Section 7.2.</td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td>March 3</td>
+					<td>Deutsch-Josza</td>
+					<td>[W] Section 7.3.</td>
+				</tr>
+				<tr class="row-b">
+					<td>12</td>
+					<td>March 5</td>
+					<td>Simon's algorithm</td>
+					<td>[W] Section 7.5.</td>
+				</tr>
+				<tr>
+					<td>12</td>
+					<td>March 10</td>
+					<td>Factoring, RSA</td>
+					<td></td>
+				</tr>
+				<tr class="row-b">
+					<td>13</td>
+					<td>March 12</td>
+					<td>DFT/QFT, Shor's algorithm</td>
+					<td>[W] Section 7.7.</td>
+				</tr>
+				<tr>
+					<td>14</td>
+					<td>March 17</td>
+					<td>Phase estimation</td>
+					<td>[W] Section 7.9.</td>
+				</tr>
+				<tr class="row-b">
+					<td>15</td>
+					<td>March 19</td>
+					<td>Phase estimation (cont.)</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>16</td>
+					<td>March 24</td>
+					<td>Factoring via phase estimation</td>
+					<td></td>
+				</tr>
+				<tr class="row-b">
+					<td>17</td>
+					<td>March 26</td>
+					<td>Grover search</td>
+					<td>[W] Section 7.8.</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>Spring break</td>
+					<td></td>
+				</tr>
+				<tr class="row-b">
+					<td></td>
+					<td>April 7</td>
+					<td>Prelim 2</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>18</td>
+					<td>April 9</td>
+					<td>Mixed states</td>
+					<td></td>
+				</tr>
+				<tr class="row-b">
+					<td>19</td>
+					<td>April 14</td>
+					<td>Mixed states (cont.)</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>20</td>
+					<td>April 17</td>
+					<td>Quantum cryptography I</td>
+					<td></td>
+				</tr>
+				<tr class="row-b">
+					<td>21</td>
+					<td>April 21</td>
+					<td>Quantum cryptography II</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>22</td>
+					<td>April 23</td>
+					<td>Quantum error correction I</td>
+					<td></td>
+				</tr>
+				<tr class="row-b">
+					<td>23</td>
+					<td>April 28</td>
+					<td>Quantum error correction II</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>24</td>
+					<td>April 30</td>
+					<td>Fault tolerance</td>
+					<td></td>
+				</tr>
+				<tr class="row-b">
+					<td>25</td>
+					<td>May 5</td>
+					<td>Query complexity and optimality of Grover search</td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div class="contentTitle">Course policies</div>
+		<div class="contentText">
+			<ul>
+			<li><b>Participation:</b> Lecture attendance is an important part of this course. You are expected to attend every meeting of the class and participate in discussions, both in-class and on Ed Discussions. You will receive credit for participation by (1) correctly answering pre-lecture quiz questions on Canvas, and (2) responding to in-class polls. You may miss up to five participation items without penalty.</li>
+			<li><b>Homework:</b> There will be a homework assignment every 2 weeks. Handwritten or LaTeX solutions are acceptable. Assignments will be submitted on Gradescope. <i>This class is highly mathematical in content, and so it is absolutely essential that you complete the homework yourself to be prepared for the prelims.</i> Your lowest homework grade will be dropped.</li>
+			<li><b>Prelim:</b> There will be two in-class prelims, one after February break and one after spring break.</li>
+			<li><b>Report:</b>  An important assessment component of this class is the <i>course report</i>, due at the end of the semester. This will be a short (approximately five pages) report on some topic <i>beyond</i> what was covered in class. This could be a literature review, a report on some advanced topic in the textbook, or even original research if you wish. This must be an <i>individual</i> project. A project proposal will be due mid-semester. Please refer to the <a href="project-rubric.html">rubric</a> for more information.</li>
+			<li><b>Grade weighting:</b> The overall grade will be 10% participation, 20% homework, 50% prelim, and 20% report.</li>
+			<li><b>Late homework submissions:</b> Each student gets a total of <i>three slip days</i> for homeworks. After your slip days are used up, late submissions of homework solutions will be graded with a 10% penalty per day of late submission. Submissions will not be graded if they are later than 48 hours after the specified deadline, regardless of slip days.</li>
+			<li><b>Academic integrity:</b> Absolute integrity is expected of every Cornell student in all academic undertakings; he/she must in no way misrepresent his/her work fraudulently or unfairly advance his/her academic status, or be a party to another student's failure to maintain academic integrity. The maintenance of an atmosphere of academic honor and the fulfillment of the provisions of this Code are the responsibilities of the students and faculty of Cornell University. Therefore, all students and faculty members shall refrain from any action that would violate the basic principles of this Code.</li>
+			<li><b>Collaboration and plagiarism:</b> You are free to discuss assignments with your peers, use internet and textbook resources, and seek help on Ed Discussions. However, all submitted work must be your own, and you must acknowledge any resources (beyond the course textbooks) that you used. In the final report, you must include appropriate citations. Any instance of plagiarism may be subject to investigation according to University regulations.</li>
+			<li><b>AI assistants:</b> You are welcome to ask AI for help, as you would ask your friends or instructors. However, <b>you may not include any AI-generated text in any homework or in your project report.</b> This will be considered plagiarism and may be subject to investigation as above. You may use AI to help with typesetting and generating diagrams.</li>
+			<li><b>Religious observance:</b> Cornell University is committed to supporting students who practice their religious beliefs. Please discuss religious absences with me well in advance of the religious holiday (preferably early in the semester, but at least two weeks before the observance) so we can arrange and schedule a reasonable alternative. The Office of Spirituality and Meaning-Making (OSMM) maintains a religious accommodation website with valuable information, including a sample email to request accommodation. If you have any questions, you may contact Joel Harter, Associate Dean of Students for Spirituality and Meaning-Making, or the Office of the Dean of Faculty.
+			<li><b>Students with Disabilities:</b> Your access in this course is important to me. Please request your accommodation letter early in the semester, or as soon as you become registered with SDS, so that we have adequate time to arrange your approved academic accommodations. If you experience any access barriers in this course, such as with printed content, graphics, online materials, or any communication barriers; reach out to me or SDS right away. If you need an <i>immediate</i> accommodation, please speak with me after class or send an email message to me and SDS.
+			</ul>
+		</div>
+</body></html>
